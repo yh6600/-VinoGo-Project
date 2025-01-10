@@ -7,6 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <!-- css 파일 분리 -->
     <link rel="stylesheet" href="VinoGo_CSS/vinoGo.css" />
+    
+    
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- slick cdn -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>VinoGo</title>
 </head>
     <!-- 24.12.30  15:00 ~ 16:20  / 24.12.31 10:30 ~ 11:00 ,  11:20 ~ 11:30-->
@@ -20,37 +27,53 @@
     <!-- index page imageLogo -->
     <div class="index-imageLogo">
         <div><a href="#"> Vingo</a></div>
+        
+        <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">로그아웃</a>
+            <a href="#">ID/Pwd 찾기</a>
+        </div>
+
     </div>
 
+    <!-- index page userBox -->
+    <div style="border: 1px solid red;" >
+            <div class="index-loginBox">   
+                <div class="userBox"><a href="#">로그인</a> </div>
+                <div class="userBox"><a href="#">회원가입</a></div>
+            </div>
+                <div class="index-loginBox">
+                        <div class="userBox"><button class="logout">로그아웃</button></div> <!-- login 시 노출 -->
+                        <div class="userBox"><a href="#">ID/PW 찾기</a></div>   <!-- login 시 노출 --> 
+                </div>
+    </div>
+
+    
     <!-- menu bar sub03 ~ 05 만들면서 추가할것 생각해보기 -->
     <div style="border: 1px solid red;" >
         <ul class="index-menu">
-            <li><a href="#">와인</a></li>
-            <li><a href="#">잔,코르크오프너</a></li>
-            <li><a href="#">sub03</a></li>
-            <li><a href="#">sub04</a></li>
-            <li><a href="#">sub05</a></li>
+            <a href="#"><li>와인</li></a>
+            <a href=""><li>잔,코르크오프너</li></a>
+            <a href=""><li>sub03</li></a>
+            <a href=""><li>sub04</li></a>
+            <a href=""><li>sub05</li></a>
         </ul>
     </div>
     
-    <!-- index page userBox -->
-    <div style="border: 1px solid red;" >
-        <div class="index-loginBox">   
-            <div><a href="#">로그인</a> </div>
-            <div><a href="#">회원가입</a></div>
-        </div>
-        <div class="index-loginBox">
-            <form action="#" method="post">
-                <div class="index-logout"><input type="submit" value="로그아웃"></div> <!-- login 시 노출 -->
-            </form>
-            <div><a href="#">ID/PW 찾기</a></div>   <!-- login 시 노출 --> 
-        </div>
-    </div>
-</div>
+
     
 
     <!-- event slick slider or  ??  -->
-
+<div>
+    <div class="single-item">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</div>
+</div>
 
   
     <!-- Best Wine, White and Red  query로 조회 많은순 || 구매 많은순 으로 정렬(서버) -->
@@ -179,16 +202,16 @@
 
 <div class="index-container">
     <!-- customer Service  -->
-    <div class="index-CustomerService" style="border: 1px solid red;" >
-        <div>고객센터</div>
-        <div>예약 주문</div>
+    <div class="index-CustomerService" >
+       <a href="#"> <div>고객센터</div></a>
+       <a href="#"> <div>예약 주문</div></a>
     </div>
 
     <!-- notice, VinoGO Event -->
     <div class="index-NoticeAndService">
-        <div>공지사항</div>
-        <div>Event</div>
-        <div>추가할 사항 </div>
+       <a href="#"> <div>공지사항</div></a>
+       <a href="#"> <div>Event</div></a>
+       <a href="#"> <div>추가할 사항 </div></a>
     </div>
 
     <!-- footer  -->
@@ -199,13 +222,17 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li>전화번호 : 010-4524-4199</li>
-              <li><a href="#">Email</a></li>
+              <li>Email : <span>whs1tms@naver.com</span></li>
               <li><a href="#">고객센터</a></li>
             </ul>
           </div>
         </div>
       </footer>
       
+      <script>
+    $('.single-item').slick();
+
+      </script>
 </div>
 </body>
 </html>

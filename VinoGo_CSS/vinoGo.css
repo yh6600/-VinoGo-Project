@@ -3,21 +3,21 @@
 
     /* index-imageLogo || String */
     .index-imageLogo{
-        border: 1px solid red;display: flex;justify-content: center;height: 10vh;align-items: center;width: 100%;
-    }
+        border: 1px solid red;display: flex;justify-content: space-between;height: 10vh;align-items: center;padding: 0 4%;}
 
     /* index-menu */
     .index-menu{
         display: flex;justify-content: space-between;height: 10vh; align-items: center;
     }
-    ul.index-menu li{padding: 0 4%;}
+    ul.index-menu > a{padding: 25px;padding-left: 5%;padding-right: 5%;}
 
     /* index-login */
     .index-loginBox{display: flex;justify-content: flex-end;     margin-top: 1em;}
-    .index-loginBox div{ width: 15%;text-align: center; border: 2px solid blue;border-radius: 10px;}
+    .userBox > a{padding: 0 22%}
+    .index-loginBox > .userBox{ width: 15%;text-align: center; border: 2px solid blue;border-radius: 10px;}
     
     .index-logout{ width: 15%;text-align: center; border: 2px solid blue;border-radius: 10px;}
-    
+    .logout{padding: 0 30%;}    
 
     /* index-BestWine Card  */
     .index-BestWine{border: 1px solid red;display: flex; height: 100%;
@@ -36,12 +36,9 @@
     .index-productInfo{display: flex;justify-content: space-around;}
     /* index-CustomerService 고객센터 및 예약 주문 */
     .index-CustomerService{border: 1px solid red;display: flex;    margin-top: 100px;}
-    .index-CustomerService div{ width: 50%;display: flex;
-            align-items: center;
-            padding-left: 25%;
-            height: 8em;}
-    .index-NoticeAndService{display: flex;justify-content: space-between;margin-top: 100px;height: 100%;border: 1px solid;}
-    .index-NoticeAndService div{padding:0 4%;height: 200px;display: flex;align-items: center;}
+    .index-CustomerService > a{ width: 50%;display: flex;align-items: center;padding-left: 25%;height: 8em;border: 1px solid;}
+    .index-NoticeAndService{display: flex;margin-top: 100px;height: 100%;border: 1px solid;}
+    .index-NoticeAndService > a{padding:0 4%;height: 200px;border: 1px solid;width: 26%; display: flex;justify-content: center; align-items: center;}
 
 
     .footer-content{border: 1px solid;margin-top: 100px;}
