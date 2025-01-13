@@ -17,38 +17,44 @@
     <title>VinoGo</title>
 </head>
     <!-- 24.12.30  15:00 ~ 16:20  / 24.12.31 10:30 ~ 11:00 ,  11:20 ~ 11:30-->
+     <!-- 25.1.13 * index.html 추가 작업 해야할 것 : 폰트 및 폰트사이즈 배경 || 배경이미지 , 색상 -->
 <style>
 
 </style>
 <body>
 
-
+<!-- @ 해야할것 슬릭 슬라이더 이벤트 임시 이미지 추가 및 베스트 와인 컨테이너 재배치 25.1.10 작성 @  -->
 <div class="index-container">
     <!-- index page imageLogo -->
     <div class="index-imageLogo">
-        <div><a href="#"> Vingo</a></div>
+        <div class="test1"><a href="#"> Vingo</a></div>
         
         <div>
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
-            <a href="#">로그아웃</a>
-            <a href="#">ID/Pwd 찾기</a>
+            <div class="logbox1">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="logbox1">
+                <a href="#">로그아웃</a>
+                <a href="#">ID/Pwd 찾기</a>
+            </div>
         </div>
 
+      
     </div>
 
     <!-- index page userBox -->
-    <div style="border: 1px solid red;" >
+<!--     <div style="border: 1px solid red;" >
             <div class="index-loginBox">   
                 <div class="userBox"><a href="#">로그인</a> </div>
                 <div class="userBox"><a href="#">회원가입</a></div>
             </div>
                 <div class="index-loginBox">
-                        <div class="userBox"><button class="logout">로그아웃</button></div> <!-- login 시 노출 -->
-                        <div class="userBox"><a href="#">ID/PW 찾기</a></div>   <!-- login 시 노출 --> 
+                        <div class="userBox"><button class="logout">로그아웃</button></div> 
+                        <div class="userBox"><a href="#">ID/PW 찾기</a></div>   
                 </div>
     </div>
-
+ -->
     
     <!-- menu bar sub03 ~ 05 만들면서 추가할것 생각해보기 -->
     <div style="border: 1px solid red;" >
@@ -65,15 +71,13 @@
     
 
     <!-- event slick slider or  ??  -->
-<div>
     <div class="single-item">
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-		<div>5</div>
+		<div style="display: flex;justify-content: center;"><img class="event-img" src="https://wrtn-image-user-output.s3.ap-northeast-2.amazonaws.com/6784b6d2ab5c5e76123c4091/519027fc-e250-40c7-b205-93626cec247a.png" alt=""></div>
+		<div style="display: flex;justify-content: center;"><img class="event-img" src="image/event01.png" alt=""></div>
+		<div style="display: flex;justify-content: center;">eventBanner_test3</div>
+		<div style="display: flex;justify-content: center;">eventBanner_test4</div>
+		<div style="display: flex;justify-content: center;">eventBanner_test5</div>
 	</div>
-</div>
 
   
     <!-- Best Wine, White and Red  query로 조회 많은순 || 구매 많은순 으로 정렬(서버) -->
