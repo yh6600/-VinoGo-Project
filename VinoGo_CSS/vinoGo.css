@@ -1,4 +1,5 @@
-    
+    /* index , css */
+
     a {text-decoration: none;}
     /* index-container */
     .index-container{max-width: 1600px; margin: 0 auto;}
@@ -32,8 +33,8 @@
         max-width: 1600px;
         margin: 0 auto;
         margin-top: 100px;}
-    .index-BestWhite{width: 50%;height: 100%; border: 1px solid blue;padding: 0 4%;}
-    .index-BestRed{width: 50%;height: 100%; border: 1px solid blue;padding: 0 4%;}
+    .index-BestWhite{width: 50%;height: 100%;padding: 0 4%;}
+    .index-BestRed{width: 50%;height: 100%; padding: 0 4%;}
     .index-cardBox{display: flex; flex-wrap: wrap;
         justify-content: center;
     }
@@ -47,7 +48,7 @@
     
     /* index-CustomerService 고객센터 및 예약 주문 */
     .index-CustomerService{border: 1px solid red;display: flex;    margin-top: 100px;}
-    .index-CustomerService > a{ width: 50%;display: flex;align-items: center;padding-left: 25%;height: 8em;border: 1px solid;}
+    .index-CustomerService > a{ width: 100%;display: flex;align-items: center;height: 8em;border: 1px solid;justify-content: center;}
     .index-NoticeAndService{display: flex;margin-top: 100px;height: 100%;border: 1px solid;}
     .index-NoticeAndService > a{padding:0 4%;height: 200px;border: 1px solid;width: 26%; display: flex;justify-content: center; align-items: center;}
 
@@ -55,8 +56,41 @@
     .footer-content{border: 1px solid;margin-top: 100px;}
     .footer-sitemap ul{display: flex;padding: 0 4%;justify-content: space-between;}
 
-
+    /* slick slider */
     .single-item{display: flex;justify-content: center;}
-
     .slick-prev{visibility: hidden;}
     .slick-next{visibility: hidden;}
+
+    @media (max-width: 1600px) {
+        .index-container{padding: 0 4%;}
+    }
+    @media (max-width: 1200px) {
+        .index-BestWine{}
+        .index-CustomerService{flex-wrap: wrap; }
+        .index-NoticeAndService{flex-direction: column;}
+        .index-NoticeAndService > a{width: 92%;}
+    }
+    @media (max-width:700px) {
+        
+        body{min-width: 550px;}
+        /* .index-imageLogo{min-width: 550px;}
+        .index-menu-container{min-width: 550px;}
+        .index-BestWine{min-width: 550px;}
+        .index-CustomerService{ min-width: 550px;}
+        .index-NoticeAndService{min-width: 550px;} */
+        
+    }
+/* index , css */
+
+
+/* login , css  */
+
+.login-container{border: 1px solid; width: 100%; height: 100%; max-width: 1600px; margin: 0 auto;}
+.login-box{border: 1px solid; text-align: center; margin-top: 100px;}
+
+/* login , css  */
+
+/* memberJoin , css */
+.mj-container{border: 1px solid;}
+
+/* memberJoin , css */
