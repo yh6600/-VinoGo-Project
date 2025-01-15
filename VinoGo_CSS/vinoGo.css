@@ -91,6 +91,20 @@
 /* login , css  */
 
 /* memberJoin , css */
-.mj-container{border: 1px solid;}
+.mj-container{display: flex; justify-content: center;border: 1px solid;}
 
-/* memberJoin , css */
+/* Firefox 브라우저용 사용자 정의 스타일 (화살표 제거) */
+[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  /* 그 외(Chrome, Safari, Edge...)의 브라우저용 사용자 정의 스타일  (화살표 제거)*/
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* memberJoin , css */
