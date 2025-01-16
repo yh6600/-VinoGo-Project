@@ -87,7 +87,9 @@
 
 .login-container{border: 1px solid; width: 100%; height: 100%; max-width: 1600px; margin: 0 auto;}
 .login-box{border: 1px solid; text-align: center; margin-top: 100px;}
-
+.login-box > input{width: 300px; height: 30px;}
+.login-box > div > input{width: 300px; height: 30px;margin-top: 15px;}
+.login-btn{margin-top: 20px;}
 /* login , css  */
 
 /* memberJoin , css */
@@ -106,5 +108,14 @@
     -webkit-appearance: none;
     margin: 0;
   }
-
+.mj-flex{display: flex;}
+.mj-flex > input{ width: 300px;height: 30px;margin-top: 15px;}
+.mj-gender{padding: 15px;}
+.mj-btnBox{display: flex; justify-content: space-evenly;    margin-top: 30px;}
   /* memberJoin , css */
+
+  /* wineList , css */
+
+  .wineList-container{border: 1px solid; width: 100%; max-width: 1600px;height: 100%;margin: 0 auto;}
+
+  /* wineList , css */

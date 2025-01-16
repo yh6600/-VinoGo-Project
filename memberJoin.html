@@ -11,48 +11,59 @@
     <a href="index.html">VinoGo</a>
 
     <!-- 25.1.15  ~ 해야할것 -> 생년월일,휴대폰 인증방식 email 수신 ? / id,pwd,닉네임 중복및 재확인여부 (서버 측 구현),   -->
+    <!-- 25.1.16 ~ 각 체크 버튼 Ajax 으로 중복시 하단에 중복여부 확인시켜주는 태그 추가할것 -->
     <div class="mj-container">
         <div>
             <p>회원가입</p>
-
-            <p>이름</p>
-            <input type="text">
-
+            <div class="mj-flex">
+                <input type="text" placeholder="이름">
+            </div>
             <!-- ID 중복 체크 서버측 구현 필요 Ajax -->
-            <p>ID</p>
-            <input type="text">
-            
+             <div class="mj-flex">
+                <input type="text" placeholder="ID">
+                <!-- <button>ID 중복 체크확인</button> -->
+            </div>
             <!-- pwd 재확인 서버측 구현필요 Ajax -->
-            <p>Password</p>
-            <input type="password" name="user_pwd" id="user_pwd">
-            <button id="togglePwd" onclick="togglePassword()">비밀번호 보기</button>
+            <div class="mj-flex">
+                <input type="password" name="user_pwd" id="user_pwd" placeholder="비밀번호">
+                <!-- <button id="togglePwd" onclick="togglePassword()">비밀번호 보기</button> -->
+            </div>
             
-            <p>Password 재확인 입력</p>
-            <input type="password" name="user_pwd" id="user_pwd">
-
-            <p>닉네임</p>
-            <input type="text" name="user_nickName" id="user_nickName">
-
+            <div class="mj-flex">
+                <input type="password" name="user_pwd" id="user_pwd" placeholder="비밀번호 재확인">
+            </div>
+            
+            <div class="mj-flex">
+                <input type="text" name="user_nickName" id="user_nickName" placeholder="닉네임">
+                <!-- <button>닉네임 중복체크 확인</button> -->
+            </div>
             <!-- 성인인증을 위한 주민번호 || 생년월일 ,  직접구현 || api 활용  -->
-            <p>주민번호 인증</p>
-            <input type="text">
-            
+            <div class="mj-flex">
+                <input type="text" placeholder="생년월일 or 주민번호 인증">
+            </div> 
             <!-- checkBox -->
-            <p>성별</p>
-            <label>
-                남자<input type="radio" name="gender" value="male">
-            </label>
-            <label>
-                여자<input type="radio" name="gender" value="female">
-            </label>
+            <div class="mj-flex">
+                <p style="margin-right: 50px;">성별</p>
+                <label class="mj-gender">
+                    남자<input type="radio" name="gender" value="male">
+                </label>
+                <label class="mj-gender">
+                    여자<input type="radio" name="gender" value="female">
+                </label>
+            </div>
 
-            <p>이메일</p>
-            <input type="email" name="user_email" id="user_email">
-             <p>전화번호</p>
-             <input type="number" name="user_phoneNumber" id="user_phoneNumber">
-             
-             <!-- <button><a href="index.html">회원가입</a></button>
-             <span><a href="index.html">취소</a></span> -->
+            <div class="mj-flex">
+                <input type="email" name="user_email" id="user_email" placeholder="email">
+            </div>
+
+            <div class="mj-flex">
+                <input type="number" name="user_phoneNumber" id="user_phoneNumber" placeholder="휴대전화번호">
+            </div>
+
+             <div class="mj-btnBox">
+                <button>회원가입</button>
+                <span><a href="index.html">취소</a></span> 
+            </div> 
         </div>
     </div>
 
