@@ -7,16 +7,68 @@
     <link rel="stylesheet" href="D:/Project_Front/VinoGo_CSS/vinoGo.css"/>
 </head>
 <body>
-    
+    <!-- 25.1.17  버튼 작업및 리스트 card 작업 할것. -->
+
     <!-- head ~ -->
     <div style="border: 1px solid; height: 140px; display: flex; justify-content: center; align-items: center;">
         <a href="D:\Project_Front\index.html">testHead</a></div>
 
     <div class="wineList-container">
-        <div>test</div>
-       <label >화이트 <input type="checkbox" name="White-wine" id="White-wine" > </label>
+        <div style="border: 1px solid; display: flex;">
+            <div class="test">
+                <!-- 화이트,레드 와인 선택 정렬 -->
+                <div class="test" style="height: 50%;">
+                    <label >화이트 <input type="checkbox" name="white-wine" id="white-wine" > </label>
+                    <div><label >레드 <input type="checkbox" name="red-wine" id="red-wine" > </label></div>
+                </div>
+                
+                <div class="test" style="height: 50%;">
+                    가격 정렬 드래그 바 
+                </div>
+            </div>
+            <div class="wineList-country">
+                <!-- 와인 생산 국가별 정렬  / 와인생산 상위 10개 or 15 개 그외는 기타국가 btn 으로 변경  -->
+                <ul style="display: flex;flex-wrap: wrap;list-style: none;padding: 25px;">
+                    <li>이탈리아</li>
+                    <li>프랑스</li>
+                    <li>스페인</li>
+                    <li>미국</li>
+                    <li>아르헨티나</li>
+                    <li>칠레</li>
+                    <li>호주</li>
+                    <li>남아프리카공화국</li>
+                    <li>포르투갈</li>
+                    <li>독일</li>
+                    <li>기타국가</li>
+                </ul>
+            </div>
+            <div class="test" style="height: 100%;">
+                <!-- 국가별 품종 기본값: none,마우스 오버시 display:block or javascirpt 활용  -->
+                <ul>
+                    <li>국가 : 프랑스</li>
+                    <li>까베르네 소비뇽</li>
+                    <li>피노 누아</li>
+                    <li>메를로</li>
+                    <li>샤르도네 </li>
+                    <li>시라</li>
+                    <li>리슬링</li>
+                </ul>
+                <!-- <div style="border: 1px solid;"></div> -->
+            </div>
+        </div>
     </div>
 
+    <div>
+        <div style="border: 1px solid;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div style="display: flex;">
+                    <div>product/</div>
+                    <div>price/ </div>
+                    <div>country </div>
+                </div>
+        </div>
+    </div>
+    
     <!-- footer ~  -->
 
 </body>
