@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- 25.1.17  버튼 작업및 리스트 card 작업 할것. -->
-
+    <!-- 25.1.24  가격정렬 range 커스텀 , wineList-catainer space-between 적용 확인요망, wineList 페이징 여부확인요망  -->
     <!-- head ~ -->
     <div style="border: 1px solid; height: 140px; display: flex; justify-content: center; align-items: center;">
         <a href="D:\Project_Front\index.html">testHead</a></div>
@@ -21,9 +21,10 @@
                     <label >화이트 <input type="checkbox" name="white-wine" id="white-wine" > </label>
                     <div><label >레드 <input type="checkbox" name="red-wine" id="red-wine" > </label></div>
                 </div>
-                
+                <!-- 25.1.24 ~ input type:range 커스텀 적용방법 찾아서 적용할것 -->
                 <div class="test" style="height: 50%;">
-                    가격 정렬 드래그 바 
+                   <p>가격 정렬 드래그 바 </p>
+                   <input type="range" name="wine-price" id="wine-price"> 
                 </div>
             </div>
             <div class="wineList-country">
@@ -42,6 +43,9 @@
                     <li>기타국가</li>
                 </ul>
             </div>
+
+            <!-- 포도품종 test 데이터 테이블 설계 완료 및 구현시 다시 확인요망 24.1.24~  -->
+
             <div class="test" style="height: 100%;">
                 <!-- 국가별 품종 기본값: none,마우스 오버시 display:block or javascirpt 활용  -->
                 <ul>
@@ -57,17 +61,98 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <div style="border: 1px solid;">
+    <!-- 24.1.24  space-between -> 반응형으로 사용할지 ? -->
+    <div style="display: flex; flex-wrap: wrap; max-width: 1400px; margin: 0 auto;">
+        <!-- 25.1.24  winelist 임시데이터 , list페이징 ? -->
+        <div style="border: 1px solid; margin-right: 50px;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
-                <div style="display: flex;">
-                    <div>product/</div>
-                    <div>price/ </div>
+                <div>
+                    <div>
+                        <span>product </span>
+                        <span>장바구니</span>
+                    </div>
+                    <div>제품설명 </div>
                     <div>country </div>
+                    <div>
+                        <em>할인</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
                 </div>
         </div>
+
+        <div style="border: 1px solid; margin-right: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div>
+                    <div>
+                        <span>product </span>
+                        <span>장바구니</span>
+                    </div>
+                    <div>제품설명 </div>
+                    <div>country </div>
+                    <div>
+                        <em>할인</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
+                </div>
+        </div>
+
+        <div style="border: 1px solid; margin-right: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div>
+                    <div>
+                        <span>product </span>
+                        <span>장바구니</span>
+                    </div>
+                    <div>제품설명 </div>
+                    <div>country </div>
+                    <div>
+                        <em>할인</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
+                </div>
+        </div>
+
+        <div style="border: 1px solid; margin-right: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div>
+                    <div>
+                        <span>product </span>
+                        <span>장바구니</span>
+                    </div>
+                    <div>제품설명 </div>
+                    <div>country </div>
+                    <div>
+                        <em>할인</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
+                </div>
+        </div>
+
+        <div style="border: 1px solid; margin-right: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div>
+                    <div>
+                        <span>product </span>
+                        <span>장바구니</span>
+                    </div>
+                    <div>제품설명 </div>
+                    <div>country </div>
+                    <div>
+                        <em>할인</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
+                </div>
+        </div>
+
+        
     </div>
+
+    
     
     <!-- footer ~  -->
 
