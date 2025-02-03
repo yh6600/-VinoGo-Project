@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>와인리스트</title>
-    <link rel="stylesheet" href="D:/Project_Front/VinoGo_CSS/vinoGo.css"/>
+    <link rel="stylesheet" href="../VinoGo_CSS/vinoGo.css"/>
 </head>
 <body>
     <!-- 25.1.17  버튼 작업및 리스트 card 작업 할것. -->
     <!-- 25.1.24  가격정렬 range 커스텀 , wineList-catainer space-between 적용 확인요망, wineList 페이징 여부확인요망  -->
     <!-- head ~ -->
     <div style="border: 1px solid; height: 140px; display: flex; justify-content: center; align-items: center;">
-        <a href="D:\Project_Front\index.html">testHead</a></div>
+        <a href="../index.html">testHead</a></div>
 
     <div class="wineList-container">
         <div style="border: 1px solid; display: flex;">
@@ -23,8 +23,11 @@
                 </div>
                 <!-- 25.1.24 ~ input type:range 커스텀 적용방법 찾아서 적용할것 -->
                 <div class="test" style="height: 50%;">
-                   <p>가격 정렬 드래그 바 </p>
-                   <input type="range" name="wine-price" id="wine-price"> 
+                    <div class="range-container">
+                    <!-- css 나 javascript 로 n원 마다 눈금줄 표시  -->
+                        <input type="range" id="priceRange" class="range-slider" min="0" max="100000" value="100000" step="10000" oninput="updatePrice()">
+                        <span id="priceLabel">전체</span>
+                    </div>
                 </div>
             </div>
             <div class="wineList-country">
@@ -65,13 +68,33 @@
     <div style="display: flex; flex-wrap: wrap; max-width: 1400px; margin: 0 auto;">
         <!-- 25.1.24  winelist 임시데이터 , list페이징 ? -->
         <div style="border: 1px solid; margin-right: 50px;">
+            <!-- 25.2.3 img 배경 태그로 사용 or 이미지배경제거  -->
+            <img class="wine-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
+                <div>
+                    <div class="product-box1">
+                        <span>product</span>
+                    </div>
+                    <div class="select-product">
+                        <div>국가</div>
+                        <div>와인</div>
+                        <div>포도품종</div> 
+                    </div>
+                    <div class="product-price">
+                        <em>할인퍼센트</em>
+                        <del>기존가격</del>
+                        <ins>할인가</ins> 
+                    </div>
+                    <button style="width: 100%;">장바구니</button>
+                </div>
+        </div>
+
+        <div style="border: 1px solid; margin-right: 50px;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
                 <div>
                     <div>
                         <span>product </span>
                         <span>장바구니</span>
                     </div>
-                    <div>제품설명 </div>
                     <div>country </div>
                     <div>
                         <em>할인</em>
@@ -88,7 +111,6 @@
                         <span>product </span>
                         <span>장바구니</span>
                     </div>
-                    <div>제품설명 </div>
                     <div>country </div>
                     <div>
                         <em>할인</em>
@@ -105,7 +127,6 @@
                         <span>product </span>
                         <span>장바구니</span>
                     </div>
-                    <div>제품설명 </div>
                     <div>country </div>
                     <div>
                         <em>할인</em>
@@ -122,24 +143,6 @@
                         <span>product </span>
                         <span>장바구니</span>
                     </div>
-                    <div>제품설명 </div>
-                    <div>country </div>
-                    <div>
-                        <em>할인</em>
-                        <del>기존가격</del>
-                        <ins>할인가</ins> 
-                    </div>
-                </div>
-        </div>
-
-        <div style="border: 1px solid; margin-right: 50px;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWI1mGWnrSF2Y_bsmBuvFcuMG7f0xZCP6PcQ&s" alt="">
-                <div>
-                    <div>
-                        <span>product </span>
-                        <span>장바구니</span>
-                    </div>
-                    <div>제품설명 </div>
                     <div>country </div>
                     <div>
                         <em>할인</em>
@@ -152,7 +155,20 @@
         
     </div>
 
-    
+    <script>
+        function updatePrice() {
+            let price = document.getElementById("priceRange").value;
+            let maxPrice = document.getElementById("priceRange").max;
+            
+            if (price == maxPrice) {
+                document.getElementById("priceLabel").innerText = `전체`;
+            } else {
+                document.getElementById("priceLabel").innerText = `0 - ${price}`;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", updatePrice);
+
+        </script>
     
     <!-- footer ~  -->
 

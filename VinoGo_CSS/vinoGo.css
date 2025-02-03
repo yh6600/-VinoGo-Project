@@ -169,3 +169,8 @@ a {text-decoration: none;}
   .wineList-country{border: 1px solid;width: 100%;margin-right: 30px;}
   .wineList-country > ul > li{border: 1px solid;margin: 10px;padding: 10px;}
   .test > ul > li {border: 1px solid;margin: 10px;padding: 10px;}
+  .wine-image{margin-bottom: 10px;}
+  .product-box1{margin-bottom: 5px;}
+  .select-product{display: flex;}
+  .select-product > div{font-size: 12px; margin-right: 5px;}
+  .product-price{margin-top: 5px;}
