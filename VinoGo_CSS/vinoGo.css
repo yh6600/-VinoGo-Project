@@ -174,3 +174,9 @@ a {text-decoration: none;}
   .select-product{display: flex;}
   .select-product > div{font-size: 12px; margin-right: 5px;}
   .product-price{margin-top: 5px;}
+    /* wineList , css */
+
+    /* customerService , css */
+    .cs-ulBox > li{ padding-right: 10px;}
+
+    /* customerService , css */
