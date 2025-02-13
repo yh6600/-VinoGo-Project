@@ -74,11 +74,7 @@ a {text-decoration: none;}
 
     
     /* index-BestWine Card  */
-    .index-BestWine{border: 1px solid red;display: flex; height: 100%;
-        width: 100%;
-        max-width: 1600px;
-        margin: 0 auto;
-        margin-top: 100px;}
+    .index-BestWine{border: 1px solid red;display: flex; height: 100%;width: 100%;max-width: 1600px;margin: 0 auto;}
     .index-BestWhite{width: 50%;height: 100%;padding: 0 4%;}
     .index-BestRed{width: 50%;height: 100%; padding: 0 4%;}
     .index-cardBox{display: flex; flex-wrap: wrap;
@@ -103,7 +99,7 @@ a {text-decoration: none;}
     .footer-sitemap ul{display: flex;padding: 0 4%;justify-content: space-between;}
 
     /* slick slider */
-    .single-item{display: flex;justify-content: center;}
+    .single-item{display: flex;justify-content: center;margin-bottom: 100px;}
     .slick-prev{visibility: hidden;}
     .slick-next{visibility: hidden;}
 
@@ -183,5 +179,5 @@ a {text-decoration: none;}
 
     /* notice , css */
     .border-content > li {align-content: center;}
-    
+    .border-paging > li{margin-right: 10px;}
     /* notice , css */
